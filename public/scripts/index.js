@@ -96,14 +96,14 @@ document.querySelector('.app-form').addEventListener('submit', function (evt) {
     const inputs = this.querySelectorAll('input');
     const labels = this.querySelectorAll('label');
     const spans = this.querySelectorAll('span');
-    const h1s = document.querySelectorAll('.app-answer');
+    const h2s = document.querySelectorAll('.app-answer');
 
     const inputDate = [...inputs].map(input => +input.value);
     const isError = errorCheck(inputDate);
 
     ifErrorStyle(isError, inputs, labels, spans);
 
-    changeDisplay(h1s, new Array(3).fill('--'));
+    changeDisplay(h2s, new Array(3).fill('--'));
 
     if (isError) return;
 
@@ -112,7 +112,7 @@ document.querySelector('.app-form').addEventListener('submit', function (evt) {
     let userDate = new Date(year, --month, day);
     let currDate = new Date();
 
-    changeDisplay(h1s, calcAge(userDate, currDate));
+    changeDisplay(h2s, calcAge(userDate, currDate));
 
     clearInput(inputs);
 });
