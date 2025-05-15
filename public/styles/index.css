@@ -1,0 +1,149 @@
+:root {
+    --color-primary: hsl(259, 100%, 65%);
+    --color-secondary: hsl(0, 100%, 67%);
+    --color-white: hsl(0, 100%, 100%);
+    --color-grey100: hsl(0, 0%, 94%);
+    --color-grey200: hsl(0, 0%, 86%);
+    --color-grey500: hsl(0, 1%, 44%);
+    --color-black: hsl(0, 0%, 0%);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    font-size: 32px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey100);
+}
+
+.app {
+    width: 841px;
+    height: 651px;
+    border-radius: 20px 20px 200px 20px;
+    padding: 56px;
+    background-color: var(--color-white);
+}
+
+.app-form {
+    width: 728px;
+}
+
+.app-inputs-container {
+    display: flex;
+}
+
+.app-label-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-right: 32px;
+    position: relative;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 24.5%;
+    font-weight: bold;
+    color: var(--color-grey500);
+}
+
+.app-input {
+    appearance: none;
+    border-radius: 7px;
+    border: 1px solid var(--color-grey200);
+    background-color: white;
+    width: 160px;
+    height: 72px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 26px;
+}
+
+.app-input:focus {
+    border-color: transparent;
+    outline: 2px solid var(--color-primary);
+}
+
+.error-message {
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;
+    bottom: -24px;
+    display: none;
+}
+
+.app-button-container {
+    position: relative;
+    text-align: end;
+}
+
+.app-line {
+    width: 100%;
+    position: absolute;
+    border: 1px solid var(--color-grey200);
+    top: 50%;
+    /* z-index: -1; */
+}
+
+.app-button {
+    position: relative;
+    appearance: none;
+    display: inline-block;
+    border: none;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: var(--color-primary);
+}
+
+.app-button:active {
+    background-color: var(--color-black);
+}
+
+.app-text {
+    height: 349px;
+}
+
+h2 {
+    font-size: 106px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -2.5%;
+}
+
+.app-months,
+.app-days {
+    margin-top: -24px;
+}
+
+.app-answer {
+    color: var(--color-primary);
+}
+
+.errorDisplay {
+    display: inline-block;
+}
+
+.errorColor {
+    color: var(--color-secondary);
+}
+
+.errorBorder {
+    border-color: var(--color-seconday);
+    &:focus {
+        outline-color: var(--color-seconday);
+    }
+}

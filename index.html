@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Age calculator app</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/favicon-32x32.png" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="./public/styles/index.css" />
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="./public/scripts/index.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="app">
+                <form action="" class="app-form">
+                    <div class="app-inputs-container">
+                        <div class="app-label-container">
+                            <label for="day">DAY</label>
+                            <input type="number" class="app-input" placeholder="DD" id="day" />
+                            <span class="error-message error-day fullyHidden">Hello</span>
+                        </div>
+                        <div class="app-label-container">
+                            <label for="month">MONTH</label>
+                            <input type="number" class="app-input" placeholder="MM" id="month" />
+                            <span class="error-message error-month fullyHidden">Hello</span>
+                        </div>
+                        <div class="app-label-container">
+                            <label for="year">YEAR</label>
+                            <input type="number" class="app-input" placeholder="YYYY" id="year" />
+                            <span class="error-message error-year fullyHidden">Hello</span>
+                        </div>
+                    </div>
+                    <div class="app-button-container">
+                        <div class="app-line"></div>
+                        <button type="submit" class="app-button"><img src="./public/assets/icon-arrow.svg" alt="arrow-down" /></button>
+                    </div>
+                </form>
+                <div class="app-text">
+                    <h2 class="app-years"><span class="app-answer">--</span> years</h2>
+                    <h2 class="app-months"><span class="app-answer">--</span> months</h2>
+                    <h2 class="app-days"><span class="app-answer">--</span> days</h2>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
