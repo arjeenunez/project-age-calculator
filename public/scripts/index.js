@@ -105,7 +105,10 @@ document.querySelector('.app-form').addEventListener('submit', function (evt) {
 
     changeDisplay(h2s, new Array(3).fill('--'));
 
-    if (isError) return;
+    if (isError) {
+        inputs.forEach(input => input.addEventListener('click', () => input.select(), { once: true }));
+        return;
+    }
 
     let [day, month, year] = inputDate;
 
