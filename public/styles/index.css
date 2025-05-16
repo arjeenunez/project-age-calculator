@@ -25,6 +25,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--color-grey100);
+    position: relative;
 }
 
 .app {
@@ -159,6 +160,15 @@ h2 {
     }
 }
 
+.attribution {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media (max-width: 800px) {
     html,
     body {
@@ -212,5 +222,9 @@ h2 {
     }
     .app-answer {
         font-size: 4rem;
+    }
+    .attribution {
+        bottom: 5px;
+        font-size: 10px;
     }
 }
