@@ -23,17 +23,17 @@
                     <div class="app-inputs-container">
                         <div class="app-label-container">
                             <label for="day">DAY</label>
-                            <input type="number" class="app-input" placeholder="DD" id="day" required />
+                            <input type="number" class="app-input" placeholder="DD" id="day" required pattern="[0-9]*" />
                             <span class="error-message error-day fullyHidden">Hello</span>
                         </div>
                         <div class="app-label-container">
                             <label for="month">MONTH</label>
-                            <input type="number" class="app-input" placeholder="MM" id="month" required />
+                            <input type="number" class="app-input" placeholder="MM" id="month" required pattern="[0-9]*" />
                             <span class="error-message error-month fullyHidden">Hello</span>
                         </div>
                         <div class="app-label-container">
                             <label for="year">YEAR</label>
-                            <input type="number" class="app-input" placeholder="YYYY" id="year" required />
+                            <input type="number" class="app-input" placeholder="YYYY" id="year" required pattern="[0-9]*" />
                             <span class="error-message error-year fullyHidden">Hello</span>
                         </div>
                     </div>
