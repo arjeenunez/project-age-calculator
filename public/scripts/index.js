@@ -11,7 +11,6 @@ const dateInfo = function (yourDate) {
 const clearInput = function (arr) {
     arr.forEach((el, i) => {
         el.value = '';
-        if (!i) el.focus();
     });
 };
 
