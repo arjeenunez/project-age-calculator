@@ -207,6 +207,9 @@ h2 {
     .app-days {
         margin-top: -12px;
     }
+    .app-text {
+        height: fit-content;
+    }
     .app-answer {
         font-size: 4rem;
     }
